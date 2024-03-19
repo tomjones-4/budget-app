@@ -10,6 +10,7 @@ Goals:
 * Eventually make it so app can read data from credit card statement
 *   This should work for my credit cards, at least
 *   Ideally, individual users of app can authenticate themselves and get their own cc data
+* Reading data from Venmo would be a nice addition
 
 Stretch goals:
 * This might be a big enough idea to be its own project entirely, but it would be cool to have analytics performed on the cc data and credit cards recommended based on spending habits
