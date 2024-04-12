@@ -12,6 +12,7 @@ Goals:
 *   Ideally, individual users of app can authenticate themselves and get their own cc data
 * Reading data from Venmo would be a nice addition
 * I think the best way to go about this will be using Plaid - see https://www.youtube.com/watch?v=sGBvKDGgPjc
+* Change storage from local memory to persistent, secure storage (maybe SQLite or some other SQL solution)
 
 Stretch goals:
 * This might be a big enough idea to be its own project entirely, but it would be cool to have analytics performed on the cc data and credit cards recommended based on spending habits
