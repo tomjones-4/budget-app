@@ -5,9 +5,7 @@ export const Routes = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/">
-          <Transactions />
-        </Route>
+        <Route path="/transactions"> element={<Transactions />}</Route>
       </Routes>
     </Router>
   );

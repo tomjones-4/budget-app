@@ -3,7 +3,7 @@ import React, { useEffect, useContext, useCallback } from "react";
 import Header from "./Components/Headers";
 import Products from "./Components/ProductTypes/Products";
 import Items from "./Components/ProductTypes/Items";
-import Transactions from "./Pages/Transactions";
+import Transactions from "./Components/Transactions";
 import Context from "./Context";
 
 import styles from "./App.module.scss";
@@ -86,6 +86,11 @@ const App = () => {
   return (
     <div className={styles.App}>
       <div className={styles.container}>
+        <nav>
+          <ul>
+            <li>{/* <a href="transactions.html">Transactions!</a> */}</li>
+          </ul>
+        </nav>
         <Header />
         {linkSuccess && (
           <>
