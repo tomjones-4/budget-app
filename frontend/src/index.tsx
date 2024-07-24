@@ -3,11 +3,18 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import { QuickstartProvider } from "./Context";
 import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Transactions from "./Components/Transactions";
 
 ReactDOM.render(
   <React.StrictMode>
     <QuickstartProvider>
-      <App />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/transactions" element={<Transactions />} />
+        </Routes>
+      </BrowserRouter>
     </QuickstartProvider>
   </React.StrictMode>,
   document.getElementById("root")

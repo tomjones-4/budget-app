@@ -7,6 +7,7 @@ import Transactions from "./Components/Transactions";
 import Context from "./Context";
 
 import styles from "./App.module.scss";
+import { Link, Outlet } from "react-router-dom";
 
 const App = () => {
   const { linkSuccess, isItemAccess, isPaymentInitiation, dispatch } =
@@ -88,9 +89,12 @@ const App = () => {
       <div className={styles.container}>
         <nav>
           <ul>
-            <li>{/* <a href="transactions.html">Transactions!</a> */}</li>
+            <li>
+              <Link to="transactions">Transactions</Link>
+            </li>
           </ul>
         </nav>
+        <Outlet />
         <Header />
         {linkSuccess && (
           <>
@@ -103,7 +107,7 @@ const App = () => {
             )}
           </>
         )}
-        <Transactions />
+        {/* <Transactions /> */}
       </div>
     </div>
   );
