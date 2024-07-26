@@ -24,3 +24,7 @@ TODO:
 
 - Need different tabs for the different banks users link from Plaid
 - There should also be an "All" tab that shows the data from all the user's linked banks and accounts
+- Need to make it so different Context components can be available throughout application so that
+  multiple different banks can be used
+  - Might be best to do this via multiple App components
+- Need to add some kind of state that tracls how many App components there are
