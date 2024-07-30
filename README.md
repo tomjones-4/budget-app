@@ -27,4 +27,5 @@ TODO:
 - Need to make it so different Context components can be available throughout application so that
   multiple different banks can be used
   - Might be best to do this via multiple App components
-- Need to add some kind of state that tracls how many App components there are
+- Need to add some kind of state that tracks how many App components there are
+- On second thought, I think multiple QuickstartProvider components might be a better way to do it
